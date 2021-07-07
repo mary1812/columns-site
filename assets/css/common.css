@@ -1,0 +1,22 @@
+:root {
+  --accent-color: #34547A;
+
+  --text-color: #727272;
+  --bg-color: #EEEFF1;
+  --second-bg-color: white;
+
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (min-width: 576px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  :root {
+    font-size: 16px;
+  }
+}

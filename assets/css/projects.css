@@ -1,0 +1,49 @@
+.project-card-img {
+  width: 100%;
+  display: block;
+}
+
+.project-card {
+  position: relative;
+}
+
+.project-content {
+  display: none;
+  padding: 20px;
+  z-index: 1;
+  color: white;
+}
+
+
+.project-content,
+.project-content::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.project-content::before {
+  content: '';
+  opacity: 0;
+  background: var(--accent-color);
+  z-index: -1;
+}
+
+
+.project-card:hover > .project-content,
+.project-card:active > .project-content,
+.project-card:focus > .project-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-card:hover > .project-content::before,
+.project-card:active > .project-content::before,
+.project-card:focus > .project-content::before {
+  opacity: 0.5;
+}
+

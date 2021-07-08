@@ -1,0 +1,38 @@
+.greeting-screen {
+  padding: 60px 0;
+  background: var(--bg-color);
+}
+
+.greeting-img-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.greeting-img {
+  display: block;
+  width: 100%;
+}
+
+.greeting-article {
+  text-align: center;
+}
+
+.greeting-heading-margins {
+  margin: 20px 0;
+}
+
+.greeting-btn-margins {
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 786px) {
+  .greeting-heading-margins {
+    margin-top: 0;
+  }
+  
+  .greeting-btn-margins {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}

@@ -1,27 +1,64 @@
 .header {
   padding: 20px 0;
+  background: var(--bg-color);
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Revalia", cursive;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3rem;
+  line-height: 1.3;
+  color: var(--accent-color);
+}
+
+.logo-link {
+  margin-top: -18px;
+  display: block;
+}
+
+.nav-link {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+
+.burger-wrapper {
+  --burger-size: 50px;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+
+  width: var(--burger-size);
+  height: var(--burger-size);
+
+  padding: 10px;
+
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
-.burger {
-  position: relative;
-
-  height: 2px;
+.burger-line {
+  height: 5px;
   width: 100%;
-  border: 1px solid var(--text-color);
+  border-radius: 5px;
+
+  background-color: var(--text-color);
 }
-
-
 
 .nav-list {
   display: none;
-
-  overflow: auto;
-
-  /* margin: auto; */
 }
 
 
@@ -30,6 +67,12 @@
   margin-left: 12px;
 } 
 
-.nav-link {
-  white-space: nowrap;
+@media screen and (min-width: 576px) {
+  .burger-wrapper {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+  }
 }
